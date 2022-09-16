@@ -24,7 +24,7 @@
                         srcset="images/loading.svg"
                         src="images/watch-big-horizontal.webp"
                         data-srcset="images/watch-big-horizontal.webp"
-                        class="lazyload">
+                        class="lazyload dark">
                 <!-- <img src="images/watch-big-horizontal.webp" alt=""> -->
             </div>
             <div class="i1">
@@ -39,7 +39,7 @@
                         srcset="images/loading.svg"
                         src="images/girl-medium.webp"
                         data-srcset="images/girl-medium.webp"
-                        class="lazyload">
+                        class="lazyload dark">
                 <!-- <img src="images/girl-medium.webp" alt=""> -->
             </div>
             <div class="i2">
@@ -54,7 +54,7 @@
                 srcset="images/loading.svg"
                 src="images/buds-big-horizontal.webp"
                 data-srcset="images/buds-big-horizontal.webp"
-                class="lazyload">
+                class="lazyload dark">
             <!-- <img src="images/buds-big-horizontal.webp" alt="">  -->
             </div>          
             <div class="i3">
@@ -69,7 +69,7 @@
                 srcset="images/loading.svg"
                 src="images/light-shoe-big-vertical.webp"
                 data-srcset="images/light-shoe-big-vertical.webp"
-                class="lazyload">
+                class="lazyload dark">
                 <!-- <img src="images/light-shoe-big-vertical.webp" alt=""> -->
             </div>
             <div class="i4">
@@ -84,7 +84,7 @@
                 srcset="images/loading.svg"
                 src="images/hamburger-big-horizontal.webp"
                 data-srcset="images/hamburger-big-horizontal.webp"
-                class="lazyload">
+                class="lazyload dark">
                 <!-- <img src="images/hamburger-big-horizontal.webp" alt=""> -->
             </div>
            
@@ -105,11 +105,11 @@
                             <span class="timeToRead">5 دقیقه</span>
                         </div>
                         <img
-                data-sizes="auto"
-                srcset="images/loading.svg"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
-                data-srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
-                class="lazyload">
+                            data-sizes="auto"
+                            srcset="images/loading.svg"
+                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
+                            data-srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
+                            class="lazyload dark">
                         <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg" alt=""> -->
                     </section>
 
@@ -333,6 +333,12 @@
         </main>
 
     </div>
-    
+    <script>
+        window.addEventListener('lazyloaded', function (e) {   
+            if(e.target.className.includes('dark')) {     
+                e.target.parentElement.className += ' darkness'
+            }
+        })
+  </script>
 </body>
 </html>
