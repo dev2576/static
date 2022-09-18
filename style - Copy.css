@@ -10,13 +10,6 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100% ;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 h1,h2,h3,p,span {
     font-family: vz;
 }
@@ -40,6 +33,8 @@ body {
     margin: 0 auto;
     width: 1100px;
     max-width: 100%;
+    /*height: 100vh;
+    background-color: aliceblue;*/
 }
 
 .five  {
@@ -70,20 +65,24 @@ body {
 .five img{
     object-fit: cover;
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    width: 261px;
+    height: 272px;
+    max-width: 100%;
 }
-
+.i5 img{
+    width: 569px;
+    height: 567px;
+}
 .five > div {
     position: relative;
 }
 
 .txt {
-    position: absolute;
-    z-index: 1;
-    bottom: 1%; 
-    color: white;
-    padding: 30px; 
+        position: absolute;
+        z-index: 1;
+        bottom: 1%; 
+        color: white;
+        padding: 30px; 
 }
 .txt span {
     color: #999;
@@ -91,9 +90,6 @@ body {
 
 .titr {
     padding-top: 10px;
-}
-.divflex {
-    height: 480px;
 }
 .flexmain,.divflex {
     display: flex;
@@ -106,7 +102,6 @@ body {
 }
 .fitem1 {
     width: 67%;
-    margin-left: 20px;
     /*background-color: red;*/
 }
 .fitem2 {
@@ -116,25 +111,26 @@ body {
 
 .fi1 {
     width: 50%;
-    height: 100%;
     position: relative;   
-    margin-left: 20px;
+    margin-left: 22px;
 }
 .fi2 {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     background-color: white;
-    /*width: 347px;*/  
+    /*width: 347px;*/
+    margin-left: 22px;
+    height: 480px;
 }
-
-.fi2 img {
-    width: 90px;
-    height: 90px;
+.fi1 img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 347px;
+    height: 480px;
+    max-width: 100%;
 }
-
 .fi1 h3 {
     font-size: 1.4em;
 }
@@ -156,6 +152,12 @@ body {
     margin-top: 0;
 }*/
 
+.fi2 img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    
+}
 .full-height {
     height: 100%;
 }
@@ -180,13 +182,14 @@ body {
 .asideflex {
     display: flex;
     flex-direction: column;
+
 }
 
 .asideflex img {
     width: 72px;
     height: 72px;
+    border-radius: 10px;
 }
-
 .asideflex h3 {
     font-size: 1.05em;
 }
@@ -196,17 +199,25 @@ body {
 }
 
 .fi3 {
-    height: 450px;
     margin-top: 22px;
     margin-bottom: 22px;
+    margin-left: 22px;
 }
 
+.fi3 img {
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 100%;
+    height: 450px;
+    width: 715px;
+}
 
 .titr {
     margin: 14px 14px 0 0;
 }
 
 .fi4 {
+    margin-left: 22px;
     border-radius: 10px;
     background-color: white;
 }
@@ -215,7 +226,6 @@ body {
     height: 200px;
     border-radius: 10px;
 }
-
 .mgleft {
     padding: 15px 14px 2px 0;
 }
@@ -235,18 +245,17 @@ body {
     color: #3d55ef
 }
 
-
+.author img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
 .author {
     margin-top: 14px;
     display: flex;
     align-items: center;
     font-size: .8em;
     justify-content: space-between;
-}
-.author img {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
 }
 .name {
     color: black;
@@ -273,6 +282,8 @@ body {
     flex-direction: column;
 }
 .flabels img {
+    object-fit: cover;
+    border-radius: 10px;
     width: 362px;
     height: 82px;
     max-width: 100%;
@@ -315,7 +326,7 @@ body {
 .darkness:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
     left: 0;
     width: 100%;
     opacity: .93;
@@ -331,20 +342,30 @@ body {
         'i5 i5 i3'
         'i4 i4 i2';
     }
-   
+    .i4 img{
+        width: 569px;
+    }
     .flexmain {
         flex-wrap: wrap;
     }
     .fitem1 {
         width: 100%;
     }
-    
+    .fi1 img {
+        width: 415px;
+    }
     .fi2 {
         width: 50%;
         margin-left: 0;
         overflow: auto;
     }
-    .fitem1 {
+    .fi3 {
+        margin-left: 0;
+    }
+    .fi3 img {
+        width: 850px;
+    }
+    .fi4 {
         margin-left: 0;
     }
 
@@ -388,38 +409,43 @@ body {
         'i2'
         'i1';
     }
-    
-    .five > div {
-        height: 260px;
+    .i5 img {
+        width: 640px;
+        height: 350px;
+    }
+    .i1 img, .i2 img, .i3 img, .i4 img{
+        width: 90px;
+        height: 90px;
     }
 
-    /*.five .txt {
+    .five .txt {
         padding: 0;
         right: 107px;
         top: 0;
-    } */
-   /* .i5 .txt {
+    } 
+    .i5 .txt {
         bottom: 40px;
         right: 5%;
         top: unset;
-    }*/
+    }
 
-    /*.five .txt h3 {
+    .five .txt h3 {
         color: black;
     }
     .i5 .txt h3 {
         color: white;
-    }*/
+    }
 
     .divflex {
         flex-wrap: wrap;
-        height: auto;
     }
     .fi1 {
         margin: 0;
         width: 100%;
     }
-  
+    .fi1 img {
+        width: 610px;
+    }
     .fi2 {
         margin: 0;
         margin-top: 20px;
@@ -433,6 +459,13 @@ body {
     .flabels img {
         width: 100%;
     }
+
+    .fi4 .fi > img {
+        width: 580px;
+        height: 310px;
+        max-width: 100%;
+        object-fit: cover;
+    }
     
     .fi4 .fi {
         display: flex;
@@ -442,11 +475,11 @@ body {
         margin-top: 10px;
     }
 
-    /*.darkness:after {
+    .darkness:after {
         content: unset;
     }
     .i5.darkness:after {
         content: '';
-    }*/
+    }
     
 }
