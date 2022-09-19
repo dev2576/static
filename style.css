@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 img {
     width: 100% ;
     height: 100%;
@@ -127,6 +132,7 @@ body {
 .fi2 img {
     width: 90px;
     height: 90px;
+    border-radius: 50%;
 }
 
 .fi1 h3 {
@@ -247,7 +253,7 @@ body {
 }
 .date {
     color: #9FA19F;
-    
+    font-size: .8em;
 }
 .social {
     display: flex;
@@ -360,6 +366,137 @@ body {
     background-color: #7E22CE;
 }
 
+.fi5 {
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.fi5flex {
+    display: flex;
+    margin-top: 15px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.fi5postflex img{
+    width: 215px;
+    height: 200px;
+}
+.fi5postflex h3{
+    font-size: 1em;
+}
+.pdate{
+    font-size: .8em;
+}
+.pcat{
+    font-size: .85em;
+    color: #3d55ef;
+}
+.fi5postflex {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.fi6 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.upflex {
+    margin-top: 15px;
+}
+.upflex, .downflex {
+    display: flex;
+}
+.upflex > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    margin-bottom: 15px;
+}
+.upflex span {
+    margin: 6px 0;
+}
+.upflexpost:first-child {
+    margin-left: 20px;
+}
+
+.downflex {
+    flex-wrap: wrap;
+}
+.downflex .fi {
+    width: 50%;
+    padding: 12px 0;
+    margin: 0;
+}
+.downflex img {
+    width: 90px;
+    height: 90px;
+}
+.downflex h3{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.comments {
+    height: 290px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.quotes {
+    height: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.lastflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.lastsec {
+    margin-top: 20px;
+}
+.lastimage {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+.lastpost {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px;
+}
+.lastpostflex {
+    display: flex;
+    margin-bottom: 20px;
+}
+.lastpostflex:last-child {
+    margin-bottom: 0;
+}
+.lastpostflex h3 {
+    font-size: .9em;
+}
+.lastpostflex img{
+    width: 72px;
+    height: 72px;
+}
+
 @media only screen and (max-width: 880px) {
     .five {
         grid-template-areas:
@@ -403,6 +540,22 @@ body {
     }
     .flabels img {
         width: 49%;
+    }
+    .upflex > div {
+        height: 450px;
+    }
+
+    .lastflex {
+        flex-direction: row;
+    }
+    .lastflex > div {
+        width: 50%;
+    }
+    .lastflex > div:nth-child(1) {
+        margin-left: 20px;
+    }
+    .lastpostflex {
+        margin-bottom: 60px;
     }
 }
 
@@ -466,6 +619,10 @@ body {
         width: 100%;
     }
 
+    .aside {
+        margin-top: 30px;
+    }
+
     .flabels img {
         width: 100%;
     }
@@ -484,6 +641,24 @@ body {
 
     .ficon {
         width: 25%;
+    }
+
+    .upflex {
+        flex-wrap: wrap;
+        /* height: 420px; */
+    }
+    .upflex > div, .downflex > div {
+        width: 100% !important;
+    }
+    .upflex > div {
+        height: 610px;
+    }
+
+    .lastflex {
+        flex-direction: column;
+    }
+    .lastflex > div {
+        width: 100%;
     }
     /*.darkness:after {
         content: unset;
