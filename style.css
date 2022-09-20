@@ -465,7 +465,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-aside{
+aside {
     position: sticky;
     top: 0;
 }
