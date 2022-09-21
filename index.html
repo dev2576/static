@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html dir="rtl" lang="fa">
-<head>
-    <link rel="preload" href="vz.woff2" as="font" type="font/woff2" crossorigin>
+<html dir="rtl" lang="fa"><head>
+    <link rel="preload" href="vz.woff2" as="font" type="font/woff2" crossorigin="">
     <script>!function(e){var t=function(u,D,f){"use strict";var k,H;if(function(){var e;var t={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",fastLoadedClass:"ls-is-cached",iframeLoadMode:0,srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:true,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:true,ricTimeout:0,throttleDelay:125};H=u.lazySizesConfig||u.lazysizesConfig||{};for(e in t){if(!(e in H)){H[e]=t[e]}}}(),!D||!D.getElementsByClassName){return{init:function(){},cfg:H,noSupport:true}}var O=D.documentElement,i=u.HTMLPictureElement,P="addEventListener",$="getAttribute",q=u[P].bind(u),I=u.setTimeout,U=u.requestAnimationFrame||I,o=u.requestIdleCallback,j=/^picture$/i,r=["load","error","lazyincluded","_lazyloaded"],a={},G=Array.prototype.forEach,J=function(e,t){if(!a[t]){a[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")}return a[t].test(e[$]("class")||"")&&a[t]},K=function(e,t){if(!J(e,t)){e.setAttribute("class",(e[$]("class")||"").trim()+" "+t)}},Q=function(e,t){var a;if(a=J(e,t)){e.setAttribute("class",(e[$]("class")||"").replace(a," "))}},V=function(t,a,e){var i=e?P:"removeEventListener";if(e){V(t,a)}r.forEach(function(e){t[i](e,a)})},X=function(e,t,a,i,r){var n=D.createEvent("Event");if(!a){a={}}a.instance=k;n.initEvent(t,!i,!r);n.detail=a;e.dispatchEvent(n);return n},Y=function(e,t){var a;if(!i&&(a=u.picturefill||H.pf)){if(t&&t.src&&!e[$]("srcset")){e.setAttribute("srcset",t.src)}a({reevaluate:true,elements:[e]})}else if(t&&t.src){e.src=t.src}},Z=function(e,t){return(getComputedStyle(e,null)||{})[t]},s=function(e,t,a){a=a||e.offsetWidth;while(a<H.minSize&&t&&!e._lazysizesWidth){a=t.offsetWidth;t=t.parentNode}return a},ee=function(){var a,i;var t=[];var r=[];var n=t;var s=function(){var e=n;n=t.length?r:t;a=true;i=false;while(e.length){e.shift()()}a=false};var e=function(e,t){if(a&&!t){e.apply(this,arguments)}else{n.push(e);if(!i){i=true;(D.hidden?I:U)(s)}}};e._lsFlush=s;return e}(),te=function(a,e){return e?function(){ee(a)}:function(){var e=this;var t=arguments;ee(function(){a.apply(e,t)})}},ae=function(e){var a;var i=0;var r=H.throttleDelay;var n=H.ricTimeout;var t=function(){a=false;i=f.now();e()};var s=o&&n>49?function(){o(t,{timeout:n});if(n!==H.ricTimeout){n=H.ricTimeout}}:te(function(){I(t)},true);return function(e){var t;if(e=e===true){n=33}if(a){return}a=true;t=r-(f.now()-i);if(t<0){t=0}if(e||t<9){s()}else{I(s,t)}}},ie=function(e){var t,a;var i=99;var r=function(){t=null;e()};var n=function(){var e=f.now()-a;if(e<i){I(n,i-e)}else{(o||r)(r)}};return function(){a=f.now();if(!t){t=I(n,i)}}},e=function(){var v,m,c,h,e;var y,z,g,p,C,b,A;var n=/^img$/i;var d=/^iframe$/i;var E="onscroll"in u&&!/(gle|ing)bot/.test(navigator.userAgent);var _=0;var w=0;var M=0;var N=-1;var L=function(e){M--;if(!e||M<0||!e.target){M=0}};var x=function(e){if(A==null){A=Z(D.body,"visibility")=="hidden"}return A||!(Z(e.parentNode,"visibility")=="hidden"&&Z(e,"visibility")=="hidden")};var W=function(e,t){var a;var i=e;var r=x(e);g-=t;b+=t;p-=t;C+=t;while(r&&(i=i.offsetParent)&&i!=D.body&&i!=O){r=(Z(i,"opacity")||1)>0;if(r&&Z(i,"overflow")!="visible"){a=i.getBoundingClientRect();r=C>a.left&&p<a.right&&b>a.top-1&&g<a.bottom+1}}return r};var t=function(){var e,t,a,i,r,n,s,o,l,u,f,c;var d=k.elements;if((h=H.loadMode)&&M<8&&(e=d.length)){t=0;N++;for(;t<e;t++){if(!d[t]||d[t]._lazyRace){continue}if(!E||k.prematureUnveil&&k.prematureUnveil(d[t])){R(d[t]);continue}if(!(o=d[t][$]("data-expand"))||!(n=o*1)){n=w}if(!u){u=!H.expand||H.expand<1?O.clientHeight>500&&O.clientWidth>500?500:370:H.expand;k._defEx=u;f=u*H.expFactor;c=H.hFac;A=null;if(w<f&&M<1&&N>2&&h>2&&!D.hidden){w=f;N=0}else if(h>1&&N>1&&M<6){w=u}else{w=_}}if(l!==n){y=innerWidth+n*c;z=innerHeight+n;s=n*-1;l=n}a=d[t].getBoundingClientRect();if((b=a.bottom)>=s&&(g=a.top)<=z&&(C=a.right)>=s*c&&(p=a.left)<=y&&(b||C||p||g)&&(H.loadHidden||x(d[t]))&&(m&&M<3&&!o&&(h<3||N<4)||W(d[t],n))){R(d[t]);r=true;if(M>9){break}}else if(!r&&m&&!i&&M<4&&N<4&&h>2&&(v[0]||H.preloadAfterLoad)&&(v[0]||!o&&(b||C||p||g||d[t][$](H.sizesAttr)!="auto"))){i=v[0]||d[t]}}if(i&&!r){R(i)}}};var a=ae(t);var S=function(e){var t=e.target;if(t._lazyCache){delete t._lazyCache;return}L(e);K(t,H.loadedClass);Q(t,H.loadingClass);V(t,B);X(t,"lazyloaded")};var i=te(S);var B=function(e){i({target:e.target})};var T=function(e,t){var a=e.getAttribute("data-load-mode")||H.iframeLoadMode;if(a==0){e.contentWindow.location.replace(t)}else if(a==1){e.src=t}};var F=function(e){var t;var a=e[$](H.srcsetAttr);if(t=H.customMedia[e[$]("data-media")||e[$]("media")]){e.setAttribute("media",t)}if(a){e.setAttribute("srcset",a)}};var s=te(function(t,e,a,i,r){var n,s,o,l,u,f;if(!(u=X(t,"lazybeforeunveil",e)).defaultPrevented){if(i){if(a){K(t,H.autosizesClass)}else{t.setAttribute("sizes",i)}}s=t[$](H.srcsetAttr);n=t[$](H.srcAttr);if(r){o=t.parentNode;l=o&&j.test(o.nodeName||"")}f=e.firesLoad||"src"in t&&(s||n||l);u={target:t};K(t,H.loadingClass);if(f){clearTimeout(c);c=I(L,2500);V(t,B,true)}if(l){G.call(o.getElementsByTagName("source"),F)}if(s){t.setAttribute("srcset",s)}else if(n&&!l){if(d.test(t.nodeName)){T(t,n)}else{t.src=n}}if(r&&(s||l)){Y(t,{src:n})}}if(t._lazyRace){delete t._lazyRace}Q(t,H.lazyClass);ee(function(){var e=t.complete&&t.naturalWidth>1;if(!f||e){if(e){K(t,H.fastLoadedClass)}S(u);t._lazyCache=true;I(function(){if("_lazyCache"in t){delete t._lazyCache}},9)}if(t.loading=="lazy"){M--}},true)});var R=function(e){if(e._lazyRace){return}var t;var a=n.test(e.nodeName);var i=a&&(e[$](H.sizesAttr)||e[$]("sizes"));var r=i=="auto";if((r||!m)&&a&&(e[$]("src")||e.srcset)&&!e.complete&&!J(e,H.errorClass)&&J(e,H.lazyClass)){return}t=X(e,"lazyunveilread").detail;if(r){re.updateElem(e,true,e.offsetWidth)}e._lazyRace=true;M++;s(e,t,r,i,a)};var r=ie(function(){H.loadMode=3;a()});var o=function(){if(H.loadMode==3){H.loadMode=2}r()};var l=function(){if(m){return}if(f.now()-e<999){I(l,999);return}m=true;H.loadMode=3;a();q("scroll",o,true)};return{_:function(){e=f.now();k.elements=D.getElementsByClassName(H.lazyClass);v=D.getElementsByClassName(H.lazyClass+" "+H.preloadClass);q("scroll",a,true);q("resize",a,true);q("pageshow",function(e){if(e.persisted){var t=D.querySelectorAll("."+H.loadingClass);if(t.length&&t.forEach){U(function(){t.forEach(function(e){if(e.complete){R(e)}})})}}});if(u.MutationObserver){new MutationObserver(a).observe(O,{childList:true,subtree:true,attributes:true})}else{O[P]("DOMNodeInserted",a,true);O[P]("DOMAttrModified",a,true);setInterval(a,999)}q("hashchange",a,true);["focus","mouseover","click","load","transitionend","animationend"].forEach(function(e){D[P](e,a,true)});if(/d$|^c/.test(D.readyState)){l()}else{q("load",l);D[P]("DOMContentLoaded",a);I(l,2e4)}if(k.elements.length){t();ee._lsFlush()}else{a()}},checkElems:a,unveil:R,_aLSL:o}}(),re=function(){var a;var n=te(function(e,t,a,i){var r,n,s;e._lazysizesWidth=i;i+="px";e.setAttribute("sizes",i);if(j.test(t.nodeName||"")){r=t.getElementsByTagName("source");for(n=0,s=r.length;n<s;n++){r[n].setAttribute("sizes",i)}}if(!a.detail.dataAttr){Y(e,a.detail)}});var i=function(e,t,a){var i;var r=e.parentNode;if(r){a=s(e,r,a);i=X(e,"lazybeforesizes",{width:a,dataAttr:!!t});if(!i.defaultPrevented){a=i.detail.width;if(a&&a!==e._lazysizesWidth){n(e,r,i,a)}}}};var e=function(){var e;var t=a.length;if(t){e=0;for(;e<t;e++){i(a[e])}}};var t=ie(e);return{_:function(){a=D.getElementsByClassName(H.autosizesClass);q("resize",t)},checkElems:t,updateElem:i}}(),t=function(){if(!t.i&&D.getElementsByClassName){t.i=true;re._();e._()}};return I(function(){H.init&&t()}),k={cfg:H,autoSizer:re,loader:e,init:t,uP:Y,aC:K,rC:Q,hC:J,fire:X,gW:s,rAF:ee}}(e,e.document,Date);e.lazySizes=t,"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:{});</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -13,576 +11,63 @@
 
         <section class="five">
             
-            <div class="i5">    
+            <div class="i5 darkness">    
                 <div class="txt">
                     <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
                     <a href="#"><span>کتاب</span></a>
                     -
                     <span class="timeToRead">5 دقیقه</span>
                 </div>
-                <img
-                        data-sizes="auto"
-                        srcset="images/loading.svg"
-                        src="images/watch-big-horizontal.webp"
-                        data-srcset="images/watch-big-horizontal.webp"
-                        class="lazyload dark">
+                <img data-sizes="auto" srcset="images/watch-big-horizontal.webp" src="images/watch-big-horizontal.webp" data-srcset="images/watch-big-horizontal.webp" class="dark lazyautosizes lazyloaded" sizes="449px">
                 <!-- <img src="images/watch-big-horizontal.webp" alt=""> -->
             </div>
-            <div class="i1">
+            <div class="i1 darkness">
                 <div class="txt">
                     <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
                     <a href="#"><span>کتاب</span></a>
                     -
                     <span class="timeToRead">5 دقیقه</span>
                 </div>
-                <img
-                        data-sizes="auto"
-                        srcset="images/loading.svg"
-                        src="images/girl-medium.webp"
-                        data-srcset="images/girl-medium.webp"
-                        class="lazyload dark">
+                <img data-sizes="auto" srcset="images/girl-medium.webp" src="images/girl-medium.webp" data-srcset="images/girl-medium.webp" class="dark lazyautosizes lazyloaded" sizes="215px">
                 <!-- <img src="images/girl-medium.webp" alt=""> -->
             </div>
-            <div class="i2">
+            <div class="i2 darkness">
                 <div class="txt">
                     <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
                     <a href="#"><span>کتاب</span></a>
                     -
                     <span class="timeToRead">5 دقیقه</span>
                 </div>
-                <img
-                data-sizes="auto"
-                srcset="images/loading.svg"
-                src="images/buds-big-horizontal.webp"
-                data-srcset="images/buds-big-horizontal.webp"
-                class="lazyload dark">
+                <img data-sizes="auto" srcset="images/buds-big-horizontal.webp" src="images/buds-big-horizontal.webp" data-srcset="images/buds-big-horizontal.webp" class="dark lazyautosizes lazyloaded" sizes="215px">
             <!-- <img src="images/buds-big-horizontal.webp" alt="">  -->
             </div>          
-            <div class="i3">
+            <div class="i3 darkness">
                 <div class="txt">
                     <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
                     <a href="#"><span>کتاب</span></a>
                     -
                     <span class="timeToRead">5 دقیقه</span>
                 </div>
-                <img
-                data-sizes="auto"
-                srcset="images/loading.svg"
-                src="images/light-shoe-big-vertical.webp"
-                data-srcset="images/light-shoe-big-vertical.webp"
-                class="lazyload dark">
+                <img data-sizes="auto" srcset="images/light-shoe-big-vertical.webp" src="images/light-shoe-big-vertical.webp" data-srcset="images/light-shoe-big-vertical.webp" class="dark lazyautosizes lazyloaded" sizes="215px">
                 <!-- <img src="images/light-shoe-big-vertical.webp" alt=""> -->
             </div>
-            <div class="i4">
+            <div class="i4 darkness">
                 <div class="txt">
                     <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
                     <a href="#"><span>کتاب</span></a>
                     -
                     <span class="timeToRead">5 دقیقه</span>
                 </div>
-                <img
-                data-sizes="auto"
-                srcset="images/loading.svg"
-                src="images/hamburger-big-horizontal.webp"
-                data-srcset="images/hamburger-big-horizontal.webp"
-                class="lazyload dark">
+                <img data-sizes="auto" srcset="images/hamburger-big-horizontal.webp" src="images/hamburger-big-horizontal.webp" data-srcset="images/hamburger-big-horizontal.webp" class="dark lazyautosizes lazyloaded" sizes="215px">
                 <!-- <img src="images/hamburger-big-horizontal.webp" alt=""> -->
             </div>
            
 
         </section>
         
-        <div class="flexmain">
+        
 
-            <div class="fitem1">
-                <p>منتخب</p>
-
-                <div class="divflex">
-                    <section class="fi1">
-                        <div class="txt">
-                            <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
-                            <a href="#"><span>کتاب</span></a>
-                            -
-                            <span class="timeToRead">5 دقیقه</span>
-                        </div>
-                        <img
-                            data-sizes="auto"
-                            srcset="images/loading.svg"
-                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
-                            data-srcset="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg"
-                            class="lazyload dark">
-                        <!-- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w265-h260-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg" alt=""> -->
-                    </section>
-
-                    <section class="fi2">
-                       <!-- <div class="full-height">      -->
-                            <div class="fi">    
-                                <img
-                                    data-sizes="auto"
-                                    srcset="images/loading.svg"
-                                    src="images/style-man.webp"
-                                    data-srcset="images/style-man.webp"
-                                    class="lazyload"
-                                >                                
-                                <div class="cat">
-                                    <span><a href="#">دسته بندی</a></span>
-                                    <h3><a href="#">عنوان مقاله</a></h3>
-                                </div>
-                            </div>
-                            <div class="fi">     
-                                <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/red-man-small.jpg"
-                                data-srcset="images/red-man-small.jpg"
-                                class="lazyload"
-                                >                                   
-                                <div class="cat">
-                                    <span><a href="#">دسته بندی</a></span>
-                                    <h3><a href="#">عنوان مقاله</a></h3>
-                                </div>
-                            </div>
-                            <div class="fi">    
-                                <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/virtual-reality-small.webp"
-                                data-srcset="images/virtual-reality-small.webp"
-                                class="lazyload"
-                                > 
-                                <div class="cat">
-                                    <span><a href="#">دسته بندی</a></span>
-                                    <h3><a href="#">عنوان مقاله</a></h3>
-                                </div>
-                            </div>
-                            <div class="fi">    
-                                <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/green-shoes-small.webp"
-                                data-srcset="images/green-shoes-small.webp"
-                                class="lazyload"
-                                >                                 
-                                <div class="cat">
-                                    <span><a href="#">دسته بندی</a></span>
-                                    <h3><a href="#">عنوان مقاله</a></h3>
-                                </div>
-                            </div>
-                        <!-- </div> -->
-                    </section>
-
-                </div>
-
-                <p>گجت</p>
-                <section class="fi3">
-                    <img
-                        data-sizes="auto"
-                        srcset="images/loading.svg"
-                        src="https://searchban-blog-new.s3.ir-thr-at1.arvanstorage.com/hamburger-big-horizontal.webp"
-                        data-srcset="https://searchban-blog-new.s3.ir-thr-at1.arvanstorage.com/hamburger-big-horizontal.webp"
-                        class="lazyload">
-                
-                    <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxJEBwPyo8MCdHEHEIf-kWP7tus1RXwExCQ-ZTPCkXXL0LrAewUm4xxgwO439jQ1js1DZaN8w38zfmuqKLyMKnM-JAisd6AkzmIQg2mi05jjnHaM41--VUT4HbXd76tt1s_Jyjn9ZLusgxhdSGS91W1d_9dBnUUnEk2r-TrxQPlPZfbx5u8MUtbv7Cuw/w888-h450-n/rezwan-ahmed-pkQ8jTqVmW0-unsplash.jpg" alt="">-->
-                </section>
-
-                
-                <section class="fi4">
-                    <p class="mgleft">آخرین</p>
-                    <div class="fi">     
-                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                        <div class="cat2">
-                            <span><a href="#">دسته بندی</a></span>
-                            <h3><a href="#">عنوان مقاله</a></h3>
-                            <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح</p>
-                            
-                                <div class="author">
-                                    <div class="social">
-                                        <img src="https://2.bp.blogspot.com/-DrNYWr1r3BA/YPMYJoxiKPI/AAAAAAAADBY/3To80aTAgdsRYfnUVSEOMAhBBiGxrizGACK4BGAYYCw/w38-h38-n/author-3.png" alt="">
-                                        <div class="mg5">
-                                            <div class="name">ادمین</div>
-                                            <div class="date">2 روز پیش</div>
-                                        </div>
-                                    </div>  
-                                    <span class="readmore"><a href="#">ادامه مطلب</a></span>
-                                </div>
-                           
-                        </div>
-                    </div>
-
-                    <div class="fi">     
-                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                        <div class="cat2">
-                            <span><a href="#">دسته بندی</a></span>
-                            <h3><a href="#">عنوان مقاله</a></h3>
-                            <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح</p>
-                            
-                                <div class="author">
-                                    <div class="social">
-                                        <img src="https://2.bp.blogspot.com/-DrNYWr1r3BA/YPMYJoxiKPI/AAAAAAAADBY/3To80aTAgdsRYfnUVSEOMAhBBiGxrizGACK4BGAYYCw/w38-h38-n/author-3.png" alt="">
-                                        <div class="mg5">
-                                            <div class="name">ادمین</div>
-                                            <div class="date">2 روز پیش</div>
-                                        </div>
-                                    </div>  
-                                    <span class="readmore"><a href="#">ادامه مطلب</a></span>
-                                </div>
-                           
-                        </div>
-                    </div>
-                    
-                    <div class="fi">     
-                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                        <div class="cat2">
-                            <span><a href="#">دسته بندی</a></span>
-                            <h3><a href="#">عنوان مقاله</a></h3>
-                            <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح</p>
-                            
-                                <div class="author">
-                                    <div class="social">
-                                        <img src="https://2.bp.blogspot.com/-DrNYWr1r3BA/YPMYJoxiKPI/AAAAAAAADBY/3To80aTAgdsRYfnUVSEOMAhBBiGxrizGACK4BGAYYCw/w38-h38-n/author-3.png" alt="">
-                                        <div class="mg5">
-                                            <div class="name">ادمین</div>
-                                            <div class="date">2 روز پیش</div>
-                                        </div>
-                                    </div>  
-                                    <span class="readmore"><a href="#">ادامه مطلب</a></span>
-                                </div>
-                           
-                        </div>
-                    </div>
-                    
-                    <div class="fi">     
-                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                        <div class="cat2">
-                            <span><a href="#">دسته بندی</a></span>
-                            <h3><a href="#">عنوان مقاله</a></h3>
-                            <p>لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح >لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح</p>
-                            
-                                <div class="author">
-                                    <div class="social">
-                                        <img src="https://2.bp.blogspot.com/-DrNYWr1r3BA/YPMYJoxiKPI/AAAAAAAADBY/3To80aTAgdsRYfnUVSEOMAhBBiGxrizGACK4BGAYYCw/w38-h38-n/author-3.png" alt="">
-                                        <div class="mg5">
-                                            <div class="name">ادمین</div>
-                                            <div class="date">2 روز پیش</div>
-                                        </div>
-                                    </div>  
-                                    <span class="readmore"><a href="#">ادامه مطلب</a></span>
-                                </div>
-                           
-                        </div>
-                    </div>
-                    
-                </section>
-
-
-                <section class="fi5">
-                    <p>ورزش</p>
-                    <div class="fi5flex">
-
-                        <div class="fi5postflex">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <!-- <div class="fi5post"> -->
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                            <!-- </div> -->
-                        </div>
-                        <div class="fi5postflex">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <!-- <div class="fi5post"> -->
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                            <!-- </div> -->
-                        </div>
-                        <div class="fi5postflex">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <!-- <div class="fi5post"> -->
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                            <!-- </div> -->
-                        </div>
-                        <div class="fi5postflex">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <!-- <div class="fi5post"> -->
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                            <!-- </div> -->
-                        </div>
-
-
-                    </div>
-                </section>
-
-
-                <section class="fi6">
-                    <p>آخرین</p>
-                    <div class="upflex">
-                        <div class="upflexpost">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                        </div>
-                        <div class="upflexpost">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLVc7EEbClkzuADEcpyx_IdnKLZRVQxxcKxcus6hu6suwpSOvgLUQQK_tofFyYlxoG9QNJeUeMwnBq6VLIUZA13N6ec96Y5XwaGrKEAeTj-SZm2_mGIuF2Kh2E1l72I3dGCZYrOFcPJGEOGSv6tTwJpcUKUNfrPdSimn74aXpGR6u7gEZKFd4Z2_Lng/w226-h200-n/bodybuilder-646482_640%20(1).jpg" alt="">
-                            <span class="pcat"><a href="#">ورزش</a></span>
-                            <h3><a href="#">چگونه ورزش کنیم</a></h3>
-                            <span class="date">ادمین - 2 روز پیش</span>
-                        </div>
-                    </div>
-                    <div class="downflex">
-                        <div class="fi">     
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                            <div class="cat">
-                                <h3><a href="#">عنوان مقاله خیلی طولانی در اینجا</a></h3>
-                                <span class="date">ادمین - 2 روز پیش</span>
-                            </div>
-                        </div>
-                        <div class="fi">     
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                            <div class="cat">
-                                <h3><a href="#">عنوان مقاله خیلی طولانی در اینجا</a></h3>
-                                <span class="date">ادمین - 2 روز پیش</span>
-                            </div>
-                        </div>
-                        <div class="fi">     
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                            <div class="cat">
-                                <h3><a href="#">عنوان مقاله خیلی طولانی در اینجا</a></h3>
-                                <span class="date">ادمین - 2 روز پیش</span>
-                            </div>
-                        </div>
-                        <div class="fi">     
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaEwu3T9Q6bFJD_AoRPCU_nIiNwqEgZ68F13d9DlNpw-163lLzY6IWOM1088_YG2LIc1qKBCzcTXG8JvH9c6JadPd7FH8W8YRUTrNPxovKW_uLtYtWOmmmHsIL7hEclH2Pg01SbgSrpavY1zh25-JOLmD3JM58v_BD9hXA3OKaGoqJqT_WjL2GiYo13w/w95-h90-n/23%20(1).jpg" alt="">
-                            <div class="cat">
-                                <h3><a href="#">عنوان مقاله خیلی طولانی در اینجا</a></h3>
-                                <span class="date">ادمین - 2 روز پیش</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Side Bar -->
-            <div class="fitem2">
-                <aside>
-                    
-                    <section class="aside">
-                        <p class="titr">منتخب</p>
-                        <div class="asideflex">
-                        
-                        <div class="fi">    
-                            <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/green-shoes-small.webp"
-                                data-srcset="images/green-shoes-small.webp"
-                                class="lazyload"
-                            > 
-                            <div class="cat">
-                                <span><a href="#">دسته بندی</a></span>
-                                <h3><a href="#">عنوان مقاله</a></h3>
-                            </div>
-                        </div>
-                        <div class="fi">     
-                            <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/girl.webp"
-                                data-srcset="images/girl.webp"
-                                class="lazyload"
-                            > 
-                            <div class="cat">
-                                <span><a href="#">دسته بندی</a></span>
-                                <h3><a href="#">عنوان مقاله خیلی طولانی در اینجا</a></h3>
-                            </div>
-                        </div>
-                        <div class="fi">    
-                            <img
-                                data-sizes="auto"
-                                srcset="images/loading.svg"
-                                src="images/style-man.webp"
-                                data-srcset="images/style-man.webp"
-                                class="lazyload"
-                              > 
-                            <div class="cat">
-                                <span><a href="#">دسته بندی</a></span>
-                                <h3><a href="#">عنوان مقاله</a></h3>
-                            </div>
-                        </div>
-                    </div>    
-                    </section>
-
-                    
-                    <section class="mgb">
-                        <p>عناوین</p> 
-                        <div class="flabels">
-                            <img src="https://i.ytimg.com/vi/Ub06gV4gzxc/maxresdefault.jpg" alt="">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxJEBwPyo8MCdHEHEIf-kWP7tus1RXwExCQ-ZTPCkXXL0LrAewUm4xxgwO439jQ1js1DZaN8w38zfmuqKLyMKnM-JAisd6AkzmIQg2mi05jjnHaM41--VUT4HbXd76tt1s_Jyjn9ZLusgxhdSGS91W1d_9dBnUUnEk2r-TrxQPlPZfbx5u8MUtbv7Cuw/w288-h82-n/rezwan-ahmed-pkQ8jTqVmW0-unsplash.jpg" alt="">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhna5HccJKIruBlXY3NNVoqd_Dafuz9klPgr5T0Y0zNAJ2Xr2_3qnr4uFCsJPjyGgdUrYMslNRbIIcMyZxeXvnGeoJV7aZBA65qmrP_QVFcRnrA0mQfvQWEBL5UB4_K3_hPlmuMzCy4vJuNIFZR_CWYi1sZ3cFZJigtBgBvQvNesQU4K1iFBQjKE7EnLA/w288-h82-n/blog-post-102.jpg" alt="">
-                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-qil2lPVFTSUNSnsV4WJ6hcWfEytoCVHU8q0JwTls_HSKvJSAGaAZzv4NuyveOjmmWWJaIaUGLc7Pbqr3wBFY1iVdvHnGZmxnHVaTpbgDt4Hu7-LUQB5Od-inzRFaGzsKgnxm_alVoRrQohg0OcIzdwF98mvKCOCUsN6bYmCrSKAXvhAOZN9xnvDKQ/w288-h82-n/mohammed-hassan-fdCvrdYUJsY-unsplash.jpg" alt="">
-                        </div>
-                    </section>
-
-                    <section class="aside">
-                        <p class="titr2">گجت</p>   
-
-                        <div class="gpost">
-                            <div class="number">01</div>
-                            <div>
-                                <h3 class="ptitle"><a href="#">مکان قرار گرفتن عنوان</a></h3>
-                                <p class="pdate">2 ساعت پیش</p>
-                            </div>
-                        </div>
-                        <div class="gpost">
-                            <div class="number">02</div>
-                            <div>
-                                <h3 class="ptitle"><a href="#">مکان قرار گرفتن عنوان</a></h3>
-                                <p class="pdate">2 ساعت پیش</p>
-                            </div>
-                        </div>
-                        <div class="gpost">
-                            <div class="number">03</div>
-                            <div>
-                                <h3 class="ptitle"><a href="#">مکان قرار گرفتن عنوان</a></h3>
-                                <p class="pdate">2 ساعت پیش</p>
-                            </div>
-                        </div>
-                        <div class="gpost">
-                            <div class="number">04</div>
-                            <div>
-                                <h3 class="ptitle"><a href="#">مکان قرار گرفتن عنوان</a></h3>
-                                <p class="pdate">2 ساعت پیش</p>
-                            </div>
-                        </div>
-                       
-                    </section>
-
-                    <section class="fsocialsec">
-                        <p class="mgleft">به ما بپیوندید</p>
-                        <div class="fsocial">
-                            <div class="ficon">
-                                <div class="bginsta">
-                                    <svg fill="white" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg>
-                                </div>    
-                                <span><a href="#insta">اینستاگرام</a></span>
-                            </div>
-                            <div class="ficon">
-                                <div class="bgfacebook">
-                                    <svg fill="white" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg>                                </div>    
-                                <span><a href="facebook">فیسبوک</a></span>
-                            </div>
-                            <div class="ficon">
-                                <div class="bgtwitter">
-                                    <svg fill="white" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>                                </div>    
-                                <span><a href="twitter">توییتر</a></span>
-                            </div>
-                            <div class="ficon">
-                                <div class="bgtwitch">
-                                    <svg fill="white" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"><path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"></path><path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"></path></svg>                                </div>    
-                                <span><a href="twitch">توییچ</a></span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="quotes">
-                        <p class="mgleft">نقل و قول</p>
-                    </section>
-
-                    <section class="comments">
-                        <p class="mgleft">کامنت</p>
-                    </section>
-
-                    <section class="lastsec">
-                        <p>هنر</p>
-                        <div class="lastflex">
-                            <div class="lastimage">
-                                <div class="txt">
-                                    <a href="#"><h3>خرید بهترین کتاب های موجود در بازار</h3></a>
-                                    <a href="#"><span>کتاب</span></a>
-                                    -
-                                    <span class="timeToRead">5 دقیقه</span>
-                                </div>
-                                <img
-                                    data-sizes="auto"
-                                    srcset="images/loading.svg"
-                                    src="images/lastimage.jpg"
-                                    data-srcset="images/lastimage.jpg"
-                                    class="lazyload dark"
-                                >           
-                                                  
-                            </div>
-                            <div class="lastpost">
-                                <div class="lastpostflex">
-                                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6pMKa6Ooj3KC-w4QbPdQt4y5lESXGyBL0PIvT7uRQkGt1B7pXD_iEVgYjd0Vh2uuUhxE42BfotDxx-kyTvSu9t3-pnTKvRuE-7WZdJ1TYU8mKjm1I-5IaGNwkI5lPNvit-M5Ig21Tu2dIM3MVfl7zM7kPlsXpDvhbUvU6uwKLjqIHOTYnprRcFuJTxA/w76-h72-n/11.jpg" alt="">
-                                    <div class="cat">
-                                        <h3><a href="#">عنوان مقاله</a></h3>
-                                        <span class="date">ادمین - 2 دقیقه پیش</span>
-                                    </div>
-                                </div>
-                                <div class="lastpostflex">
-                                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6pMKa6Ooj3KC-w4QbPdQt4y5lESXGyBL0PIvT7uRQkGt1B7pXD_iEVgYjd0Vh2uuUhxE42BfotDxx-kyTvSu9t3-pnTKvRuE-7WZdJ1TYU8mKjm1I-5IaGNwkI5lPNvit-M5Ig21Tu2dIM3MVfl7zM7kPlsXpDvhbUvU6uwKLjqIHOTYnprRcFuJTxA/w76-h72-n/11.jpg" alt="">
-                                    <div class="cat">
-                                        <h3><a href="#">عنوان مقاله</a></h3>
-                                        <span class="date">ادمین - 2 دقیقه پیش</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </section>
-                    
-                </aside>
-            </div>
-
-        </div>
-
-        <footer>
-            <div class="footer1">
-                <h2 class="mgleft1">سرچبان</h2>
-                <p class="mgleft1">موتور جستجوی کالا</p>
-            </div>
-            <div class="footer2">
-                <span class="sss"></span>
-                <h3 class="mgleft1">دسترسی سریع</h3>
-                <ul>
-                    <li><a href="/blog">خانه</a></li>
-                    <li><a href="#">مقالات</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#">درباره ما</a></li>
-                </ul>
-            </div>
-            <div class="footer3">
-                <h3 class="mgleft1">تگ ها</h3>
-                <ul>
-                    <li><a href="#">کامپیوتر</a></li>
-                    <li><a href="#">گوشی موبایل</a></li>
-                    <li><a href="#">کیف</a></li>
-                    <li><a href="#">سامسونگ</a></li>
-                    <li><a href="#">ساعت</a></li>
-                    <li><a href="#">لپتاپ</a></li>
-                    <li><a href="#">بلندگو</a></li>
-                    <li><a href="#">فرش</a></li>
-                    <li><a href="#">مانیتور</a></li>
-                    <li><a href="#">ظبط</a></li>
-                </ul>
-            </div>
-        </footer>
+        
 
     </div> <!-- End Main --> 
 
@@ -595,5 +80,6 @@
             }
         })
   </script>
-</body>
-</html>
+
+
+</body></html>
